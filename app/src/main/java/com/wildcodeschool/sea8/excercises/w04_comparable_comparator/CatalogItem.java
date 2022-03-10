@@ -2,7 +2,7 @@ package com.wildcodeschool.sea8.excercises.w04_comparable_comparator;
 
 import java.math.BigDecimal;
 
-public class CatalogItem {
+public class CatalogItem implements Comparable<CatalogItem> {
     private int id;
     private String name;
     private BigDecimal price;
@@ -34,5 +34,11 @@ public class CatalogItem {
     @Override
     public String toString() {
         return String.format("CatalogItem(Name: \"%s\", Price: %s, Category: %s, ID: %d)", getName(), getPrice().toString(), getCategory(), getID());
+    }
+
+    @Override
+    public int compareTo(CatalogItem item) {
+        return this.id - item.id;
+        // return Integer.compare(id, item.id);
     }
 }

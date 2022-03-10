@@ -41,9 +41,21 @@ public class Catalog {
         printCatalog(catalog);
 
         // TASK AREA START
+        Collections.sort(catalog);
+        System.out.println("\n\nSorted by ID:\n");
+        printCatalog(catalog);
 
+        Collections.sort(catalog, new PriceComparator());
+        System.out.println("\n\nSorted by Price:\n");
+        printCatalog(catalog);
 
+        Collections.sort(catalog, new CategoryComparator());
+        System.out.println("\n\nSorted by Category:\n");
+        printCatalog(catalog);
 
+        Collections.sort(catalog, new NameComparator());
+        System.out.println("\n\nSorted by Name:\n");
+        printCatalog(catalog);
         // TASK ARE END
     }
 
