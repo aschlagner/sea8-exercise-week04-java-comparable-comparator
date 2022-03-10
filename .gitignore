@@ -8,6 +8,11 @@
 # BlueJ files
 *.ctxt
 
+# Telekom-Files
+.gitignore
+.gradle.properties
+
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
