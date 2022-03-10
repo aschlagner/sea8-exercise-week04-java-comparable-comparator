@@ -10,7 +10,7 @@
 
 # Telekom-Files
 .gitignore
-.gradle.properties
+gradle.properties
 
 
 # Mobile Tools for Java (J2ME)
